@@ -1,0 +1,209 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8300,        199]
+NotebookOptionsPosition[      6655,        165]
+NotebookOutlinePosition[      6998,        180]
+CellTagsIndexPosition[      6955,        177]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.761145133551114*^9, 3.7611451339151154`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"a9d3d066-2a45-45e7-8130-26995f537d07"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  "\"\<D:\\\\github\\\\wolfram-yaml\\\\YAML\\\\Converter.m\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.761144751783643*^9, 3.7611447731168947`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"aacee0bc-6d2b-4fac-930a-cf31f20edadb"],
+
+Cell[BoxData["\<\"System`Convert`YAMLDump`\"\>"], "Output",
+ CellChangeTimes->{3.7611447734418983`*^9, 3.7611451383951426`*^9, 
+  3.761145922554988*^9, 3.761146135718469*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"cf72a13b-1f62-4fe4-8250-55666212767d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  "\"\<D:\\\\github\\\\wolfram-yaml\\\\YAML\\\\Import.m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.761144751783643*^9, 3.7611447785399265`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"9a87bde2-69cf-4f84-b804-89f0408bafb0"],
+
+Cell[BoxData["\<\"System`Convert`YAMLDump`\"\>"], "Output",
+ CellChangeTimes->{3.761144779190934*^9, 3.7611451417041855`*^9, 
+  3.7611459249450006`*^9, 3.761146137017475*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"f31a4b2b-b7c2-4bd7-8474-27994cf61ea3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Import", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\arnoudb.WRI\\\\Downloads\\\\rii-database-2019-02-11\\\\\
+database\\\\data\\\\main\\\\ZnTe\\\\Li.yml\>\"", ",", "\"\<YAML\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7611447803729362`*^9, 3.761144814509125*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"45a6b508-a770-4d27-aa49-6085d514381c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Java","excptn",
+   "\"A Java exception occurred: \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"java.lang.UnsupportedClassVersionError: yaml has \
+been compiled by a more recent version of the Java Runtime (class file \
+version 55.0), this version of the Java Runtime only recognizes class file \
+versions up to 52.0\\\\\\\\n\\\\\\\\tat \
+java.lang.ClassLoader.defineClass1(Native Method)\\\\\\\\n\\\\\\\\tat \
+java.lang.ClassLoader.defineClass(ClassLoader.java:763)\\\\\\\\n\\\\\\\\tat \
+java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)\\\\\\\
+\\n\\\\\\\\tat java.net.URLClassLoader.defineClass(URLClassLoader.java:468)\\\
+\\\\\\n\\\\\\\\tat java.net.URLClassLoader.access$100(URLClassLoader.java:74)\
+\\\\\\\\n\\\\\\\\tat java.net.URLClassLoader$1.run(URLClassLoader.java:369)\\\
+\\\\\\n\\\\\\\\tat java.net.URLClassLoader$1.run(URLClassLoader.java:363)\\\\\
+\\\\n\\\\\\\\tat java.security.AccessController.doPrivileged(Native Method)\\\
+\\\\\\n\\\\\\\\tat java.net.URLClassLoader.findClass(URLClassLoader.java:362)\
+\\\\\\\\n\\\\\\\\tat \
+java.lang.ClassLoader.loadClass(ClassLoader.java:424)\\\\\\\\n\\\\\\\\tat \
+java.lang.ClassLoader.loadClass(ClassLoader.java:357)\\\\\\\\n\\\\\\\\tat \
+java.lang.Class.forName0(Native Method)\\\\\\\\n\\\\\\\\tat \
+java.lang.Class.forName(Class.java:348)\\\\\\\"\\\"}]\\).\"",2,3,1,
+   20453628170125582490,"Local","JLink`Java"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{3.7611448152611313`*^9, 3.7611451429611874`*^9, 
+  3.761145926468011*^9, 3.761146139329492*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"1778613e-3030-42e2-a70f-8997eb321665"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LoadJavaClass","fail",
+   "\"Java failed to load class \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"yaml\\\\\\\"\\\"}]\\).\"",2,3,2,
+   20453628170125582490,"Local","JLink`LoadJavaClass"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{3.7611448152611313`*^9, 3.7611451429611874`*^9, 
+  3.761145926468011*^9, 3.761146139381492*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"e78db10a-c9e6-474d-b63c-76924c754e06"],
+
+Cell[BoxData[
+ RowBox[{"yaml`Parse", 
+  "[", "\<\"C:\\\\Users\\\\arnoudb.WRI\\\\Downloads\\\\rii-database-2019-02-\
+11\\\\database\\\\data\\\\main\\\\ZnTe\\\\Li.yml\"\>", "]"}]], "Output",
+ CellChangeTimes->{3.76114481539913*^9, 3.761145143032192*^9, 
+  3.7611459265450115`*^9, 3.761146139393485*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"96eb0e57-62d1-417b-a4f9-c1986126b0a0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"AddToClassPath", "[", 
+  "\"\<D:\\\\github\\\\wolfram-yaml\\\\YAML\\\\Java\\\\yaml.jar\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7611449281407647`*^9, 3.761144968132985*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"7bf2c902-bc95-4357-a8de-bd5076ba31bd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LoadJavaClass", "[", "\"\<yaml\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7611449779570427`*^9, 3.761144982701065*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"f24da801-cd6a-4c55-9ef5-74c7804da137"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Java","excptn",
+   "\"A Java exception occurred: \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"java.lang.ClassNotFoundException: \
+yaml\\\\\\\\n\\\\\\\\tat \
+java.net.URLClassLoader.findClass(URLClassLoader.java:382)\\\\\\\\n\\\\\\\\\
+tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\\\\\\\\n\\\\\\\\tat \
+java.lang.ClassLoader.loadClass(ClassLoader.java:357)\\\\\\\\n\\\\\\\\tat \
+java.lang.Class.forName0(Native Method)\\\\\\\\n\\\\\\\\tat \
+java.lang.Class.forName(Class.java:348)\\\\\\\"\\\"}]\\).\"",2,9,3,
+   20453600480941099304,"Local","JLink`Java"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{3.7611449830200715`*^9},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"7328810a-fc4b-4d76-97ac-bbb712c37dc0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LoadJavaClass","fail",
+   "\"Java failed to load class \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"yaml\\\\\\\"\\\"}]\\).\"",2,9,4,
+   20453600480941099304,"Local","JLink`LoadJavaClass"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{3.7611449830330725`*^9},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"78253c2d-4651-4aff-8902-a92fa8991c56"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.7611449830440702`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"f7abc560-d7f7-4e4f-8b13-df0e11673242"]
+}, Open  ]]
+},
+WindowSize->{958, 769},
+WindowMargins->{{Automatic, 256}, {Automatic, 77}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (March 6, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 176, 2, 28, "Input",ExpressionUUID->"a9d3d066-2a45-45e7-8130-26995f537d07"],
+Cell[CellGroupData[{
+Cell[759, 26, 266, 5, 28, "Input",ExpressionUUID->"aacee0bc-6d2b-4fac-930a-cf31f20edadb"],
+Cell[1028, 33, 252, 3, 32, "Output",ExpressionUUID->"cf72a13b-1f62-4fe4-8250-55666212767d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1317, 41, 260, 4, 28, "Input",ExpressionUUID->"9a87bde2-69cf-4f84-b804-89f0408bafb0"],
+Cell[1580, 47, 252, 3, 32, "Output",ExpressionUUID->"f31a4b2b-b7c2-4bd7-8474-27994cf61ea3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1869, 55, 366, 7, 48, "Input",ExpressionUUID->"45a6b508-a770-4d27-aa49-6085d514381c"],
+Cell[2238, 64, 1670, 28, 275, "Message",ExpressionUUID->"1778613e-3030-42e2-a70f-8997eb321665"],
+Cell[3911, 94, 467, 11, 21, "Message",ExpressionUUID->"e78db10a-c9e6-474d-b63c-76924c754e06"],
+Cell[4381, 107, 378, 6, 32, "Output",ExpressionUUID->"96eb0e57-62d1-417b-a4f9-c1986126b0a0"]
+}, Open  ]],
+Cell[4774, 116, 282, 5, 28, "Input",ExpressionUUID->"7bf2c902-bc95-4357-a8de-bd5076ba31bd"],
+Cell[CellGroupData[{
+Cell[5081, 125, 223, 3, 28, "Input",ExpressionUUID->"f24da801-cd6a-4c55-9ef5-74c7804da137"],
+Cell[5307, 130, 774, 16, 112, "Message",ExpressionUUID->"7328810a-fc4b-4d76-97ac-bbb712c37dc0"],
+Cell[6084, 148, 396, 10, 21, "Message",ExpressionUUID->"78253c2d-4651-4aff-8902-a92fa8991c56"],
+Cell[6483, 160, 156, 2, 32, "Output",ExpressionUUID->"f7abc560-d7f7-4e4f-8b13-df0e11673242"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

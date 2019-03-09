@@ -14,7 +14,7 @@ import com.wolfram.jlink.MathLinkException;
 import com.wolfram.jlink.StdLink;
 
 @SuppressWarnings("unchecked")
-public class yaml {
+public class YamlLinkUtils {
 	public static void Parse(String filename) {
 		InputStream input = null;
 		KernelLink link = null;
