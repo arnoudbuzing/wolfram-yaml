@@ -14,14 +14,14 @@ import com.wolfram.jlink.MathLinkException;
 import com.wolfram.jlink.StdLink;
 
 @SuppressWarnings("unchecked")
-public class YamlLinkUtils {
+public class yaml {
 	public static void Parse(String filename) {
 		InputStream input = null;
 		KernelLink link = null;
 		try {
 			link = StdLink.getLink();
 			link.beginManual();
-			
+
 			Yaml yaml = new Yaml(new SafeConstructor());
 			input = new FileInputStream(new File(filename));
 			Object result = yaml.load(input);
@@ -58,7 +58,7 @@ public class YamlLinkUtils {
 				Deserialize(link, entry.getKey());
 				Deserialize(link, entry.getValue());
 			}
-			
+
 		} else if (value instanceof Date) {
 			Calendar cal = Calendar.getInstance();
 			cal.setTime((Date)value);
