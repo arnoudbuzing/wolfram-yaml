@@ -5,8 +5,8 @@ jc = FileNameJoin[{DirectoryName[$InputFileName], "Java"}]
 importYAML[filename_String, options___] := Module[{},
 	InstallJava[];
 	JLink`AddToClassPath[jc];
-	JLink`LoadJavaClass["YamlLinkUtils"];
-	parsed = YamlLinkUtils`Parse[filename];
+	JLink`LoadJavaClass["yaml"];
+	parsed = yaml`Parse[filename];
 	{"Data" -> parsed}
 ]
 
