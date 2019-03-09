@@ -1,6 +1,6 @@
-YAML importer for *Mathematica*.
+# Wolfram Language importer for YAML format
 
-### Installation
+## Installation
 
 This snippet will install the converter in the `$BaseDirectory`. (You may also
 use `$UserBaseDirectory` instead.) After installation, the format will be
@@ -18,7 +18,7 @@ DeleteDirectory[tmpExpanded, DeleteContents -> True];
 Print["Installed YAML importer to " <> dest <> ". Please restart Mathematica or the kernel."]
 ```
 
-### Usage
+## Usage
 
 Note that the format must be specified when calling `Import` ([note](#extension-detection)).
 
@@ -26,7 +26,7 @@ Note that the format must be specified when calling `Import` ([note](#extension-
 Import["filename.yaml", "YAML"]
 ```
 
-### YAML Spec Compliance
+## YAML Spec Compliance
 
 This library is a thin binding to [SnakeYAML](https://bitbucket.org/asomov/snakeyaml),
 which is a complete YAML 1.1 processor.
@@ -41,13 +41,13 @@ which is a complete YAML 1.1 processor.
   duplicates; sets vs. plain lists). All of the collections are imported as
   `List`s, and (planned) all `List`s are exported as `!!seq` (sequences).
 
-### Developer Notes
+## Developer Notes
 
 The `YAML` directory is what gets copied to `$[User]BaseDirectory/SystemFiles/Formats`.
 All other files and folders are only needed for testing and building from
 source. After building, generate the yaml.jar file using mbuild.jardesc.
 
-### Extension Detection
+## Extension Detection
 
 I can't quite get *Mathematica* to automatically import "*.yaml" files as YAML.
 You could put the following code in an `init.m` file; it does not seem to load
